@@ -709,7 +709,7 @@ function os2web_hearings_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_os2web_hearings_enddate',
-    'label' => 'Høringsfrist',
+    'label' => 'Høringsfrist / Klagefrist',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -925,7 +925,7 @@ function os2web_hearings_field_default_field_instances() {
   t('Body');
   t('Egenavne / stednavne');
   t('Filer');
-  t('Høringsfrist');
+  t('Høringsfrist / Klagefrist');
   t('Indhold');
   t('KL Emneord');
   t('Møder');
