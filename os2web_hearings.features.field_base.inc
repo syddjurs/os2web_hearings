@@ -161,8 +161,8 @@ function os2web_hearings_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'afgoerelse' => 'Afgørelse',
         'hoering' => 'Høring',
+        'afgoerelse' => 'Afgørelse',
       ),
       'allowed_values_function' => '',
     ),
