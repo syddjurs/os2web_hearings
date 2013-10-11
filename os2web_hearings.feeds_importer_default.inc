@@ -23,6 +23,7 @@ function os2web_hearings_feeds_importer_default() {
         'auto_detect_feeds' => 1,
         'use_pubsubhubbub' => 0,
         'designated_hub' => '',
+        'request_timeout' => NULL,
       ),
     ),
     'parser' => array(
@@ -60,7 +61,6 @@ function os2web_hearings_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'content_type' => 'os2web_hearings_hearing',
         'expire' => '-1',
         'author' => 0,
         'mappings' => array(
@@ -92,6 +92,9 @@ function os2web_hearings_feeds_importer_default() {
         ),
         'update_existing' => '1',
         'input_format' => 'plain_text',
+        'authorize' => 1,
+        'skip_hash_check' => 0,
+        'bundle' => 'os2web_hearings_hearing',
       ),
     ),
     'content_type' => '',
