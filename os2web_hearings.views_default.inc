@@ -341,7 +341,7 @@ if(is_object($node)){
   $handler->display->display_options['fields']['field_os2web_hearings_enddate']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_os2web_hearings_enddate']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_os2web_hearings_enddate']['settings'] = array(
-    'format_type' => 'kun_dato',
+    'format_type' => 'os2web_base_date_only',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -386,14 +386,14 @@ if(is_object($node)){
   $handler->display->display_options['fields']['imported']['empty'] = '[created]';
   $handler->display->display_options['fields']['imported']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['imported']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['imported']['date_format'] = 'kun_dato';
+  $handler->display->display_options['fields']['imported']['date_format'] = 'os2web_base_date_only';
   /* Felt: Indhold: Startdato */
   $handler->display->display_options['fields']['field_os2web_hearings_startdate']['id'] = 'field_os2web_hearings_startdate';
   $handler->display->display_options['fields']['field_os2web_hearings_startdate']['table'] = 'field_data_field_os2web_hearings_startdate';
   $handler->display->display_options['fields']['field_os2web_hearings_startdate']['field'] = 'field_os2web_hearings_startdate';
   $handler->display->display_options['fields']['field_os2web_hearings_startdate']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_os2web_hearings_startdate']['settings'] = array(
-    'format_type' => 'kun_dato',
+    'format_type' => 'os2web_base_date_only',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
