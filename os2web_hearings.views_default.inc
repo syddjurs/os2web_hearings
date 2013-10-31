@@ -434,11 +434,10 @@ if(is_object($node)){
     'nothing' => 0,
     'nothing_1' => 0,
   );
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sorteringskriterie: Indhold: Startdato (field_os2web_hearings_startdate) */
+  $handler->display->display_options['sorts']['field_os2web_hearings_startdate_value']['id'] = 'field_os2web_hearings_startdate_value';
+  $handler->display->display_options['sorts']['field_os2web_hearings_startdate_value']['table'] = 'field_data_field_os2web_hearings_startdate';
+  $handler->display->display_options['sorts']['field_os2web_hearings_startdate_value']['field'] = 'field_os2web_hearings_startdate_value';
   /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -459,6 +458,12 @@ if(is_object($node)){
   $handler->display->display_options['filters']['field_os2web_hearings_enddate_value']['field'] = 'field_os2web_hearings_enddate_value';
   $handler->display->display_options['filters']['field_os2web_hearings_enddate_value']['operator'] = '>';
   $handler->display->display_options['filters']['field_os2web_hearings_enddate_value']['default_date'] = 'now -1 day';
+  /* Filterkriterie: Indhold: Startdato (field_os2web_hearings_startdate) */
+  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['id'] = 'field_os2web_hearings_startdate_value';
+  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['table'] = 'field_data_field_os2web_hearings_startdate';
+  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['field'] = 'field_os2web_hearings_startdate_value';
+  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['default_date'] = 'now';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
