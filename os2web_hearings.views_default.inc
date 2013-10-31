@@ -462,7 +462,7 @@ if(is_object($node)){
   $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['id'] = 'field_os2web_hearings_startdate_value';
   $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['table'] = 'field_data_field_os2web_hearings_startdate';
   $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['field'] = 'field_os2web_hearings_startdate_value';
-  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['operator'] = '<=';
   $handler->display->display_options['filters']['field_os2web_hearings_startdate_value']['default_date'] = 'now';
 
   /* Display: Page */
